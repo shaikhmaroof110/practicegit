@@ -1,0 +1,16 @@
+2024-11-20T15:39:31.934+05:30  INFO 11252 --- [demo] [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 21.0.5 with PID 11252 (C:\Users\HP\Downloads\demo\target\classes started by HP in C:\Users\HP\Downloads\demo)
+2024-11-20T15:39:31.937+05:30  INFO 11252 --- [demo] [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-11-20T15:39:33.531+05:30  INFO 11252 --- [demo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-20T15:39:33.547+05:30  INFO 11252 --- [demo] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-20T15:39:33.548+05:30  INFO 11252 --- [demo] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-20T15:39:33.607+05:30  INFO 11252 --- [demo] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-20T15:39:33.607+05:30  INFO 11252 --- [demo] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1590 ms
+2024-11-20T15:39:34.111+05:30  INFO 11252 --- [demo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-11-20T15:39:34.124+05:30  INFO 11252 --- [demo] [main] com.example.demo.DemoApplication         : Started DemoApplication in 2.87 seconds (process running for 3.435)
+2024-11-20T15:40:05.446+05:30  INFO 11252 --- [demo] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-20T15:40:05.447+05:30  INFO 11252 --- [demo] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-20T15:40:05.447+05:30  INFO 11252 --- [demo] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-11-20T15:40:05.494+05:30 ERROR 11252 --- [demo] [http-nio-8080-exec-1] c.e.demo.controllers.HomeController      : unable to sum.. shaikh
+2024-11-20T15:40:05.496+05:30  INFO 11252 --- [demo] [http-nio-8080-exec-1] c.e.demo.controllers.HomeController      : This is API calling ... shaikh
+2024-11-20T15:40:05.496+05:30  WARN 11252 --- [demo] [http-nio-8080-exec-1] c.e.demo.controllers.HomeController      : The Warning Log
+

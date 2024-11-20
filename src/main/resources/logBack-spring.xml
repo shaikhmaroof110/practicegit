@@ -1,0 +1,32 @@
+<configuration>
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <!-- encoders are assigned the type
+             ch.qos.logback.classic.encoder.PatternLayoutEncoder by default -->
+        <encoder>
+            <pattern>%d{dd/L/YY hh:mm:ss.SS: a} [%thread] %-5level %logger{36} -%kvp- %msg%n</pattern>
+        </encoder>
+    </appender>
+<!--java date format specifiers  on google -->
+
+    <appender name ="file_SOUT" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file >
+            logs/backend-project.log
+        </file>
+        <encoder>
+            <pattern>%d{dd/L/YY hh:mm:ss.SS: a} [%thread] %-5level %logger{36} -%kvp- %msg%n</pattern>
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>log/backend-proj|-%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+    </appender>
+
+    <root level="info">
+        <appender-ref ref="STDOUT" />
+    </root>
+
+    <logger name="spring.backend" level="TRACE" additivity="false" >
+        <appender-ref ref="file_SOUT"/>
+    </logger>
+</configuration>
